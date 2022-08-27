@@ -1,0 +1,296 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto:wght@400;700&display=swap');
+
+html, body {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 12px;
+
+	a {
+		color: #000;
+	}
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 13px 50px;
+
+	.header__menu {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.header__login {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		a {
+			padding: 0 50px 0 0;
+		}
+	}
+}
+
+.cta {
+	width: 100%;
+	height: 810px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url("/img/cta.jpg") no-repeat; 
+	background-size: cover;
+
+	.cta__title {
+		color: #fff;
+		font-size: 66px;
+		text-align: center;
+		margin: 0 0 23px 0;
+	}
+
+	.cta__subtitle {
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+		margin: 0 0 45px 0;
+	}
+
+	.cta__btn {
+		background: #FFFFFF;
+		border-radius: 999px;
+		color: #000;
+		font-weight: 700;
+		padding: 2px 105px;
+	}
+}
+
+.about {
+	padding: 68px 0 85px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.about__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		text-align: center;
+		margin: 0 0 14px 0;
+	}
+
+	.about__desc {
+		font-size: 18px;
+		line-height: 23px;
+		text-align: center;
+		width: 622px;
+	}
+}
+
+.goods {
+	padding: 80px 65px;
+	background: #E5E9FF;
+
+	.goods__top {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		text-transform: uppercase;
+		margin: 0 0 20px 0;
+	}
+
+	.goods__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 32px;
+
+		.goods__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			.goods__img {
+				position: relative;
+				margin: 0 0 20px 0;
+
+				img {
+					border-radius: 8px;
+					width: 100%;
+				}
+
+				.goods__img-seal {
+					position: absolute;
+					top: 25px;
+					right: 25px;
+					width: 60px;
+					height: 60px;
+				}
+
+				.goods__available {
+					position: absolute;
+					bottom: 14px;
+					right: 50%;
+					transform: translate(50%, 0);
+					text-align: center;
+				}
+			}
+
+			.goods__name {
+				font-size: 21px;
+				margin: 0 0 10px 0;
+			}
+
+			.goods__desc {
+				margin: 0 0 96px 0;
+			}
+
+			.goods__btn {
+				padding: 8px 58px;
+				border-radius: 999px;
+				text-transform: uppercase;
+				background: #FFA5FF;
+				color: #000;
+			}
+		}
+	}
+}
+
+.razor {
+	padding: 20px;
+	background: #E5E9FF;
+
+	.razor__row {
+		display: flex;
+		align-items: center;
+
+		.razor__img {
+			flex: 0 0 50%;
+
+			img {
+				width: 100%;
+				object-fit: cover;
+				border-radius: 20px;
+			}
+		}
+
+		.razor__text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			text-align: center;
+
+			.razor__seal {
+				margin: 0 0 44px 0;
+			}
+
+			.razor__title {
+				font-size: 43px;
+				margin: 0 0 42px 0;
+			}
+
+			.razor__desc {
+				font-size: 17px;
+				width: 380px;
+				margin: 0 0 50px 0;
+
+				p:first-child {
+					margin: 0 0 23px 0;
+				}
+			}
+
+			.razor__btn {
+				display: inline-block;
+				padding: 2px 93px;
+				color: #000;
+				text-transform: uppercase;
+				font-weight: 700;
+				background: #90AAFF;
+				border-radius: 999px;
+			}
+		}
+	}
+}
+
+.separator {
+	padding: 10px 0;
+	background: #90AAFF;
+
+	.separator__title {
+		text-align: center;
+	}
+}
+
+.pomade {
+	padding: 20px;
+	background: #E5E9FF;
+
+	.pomade__row {
+		display: flex;
+		align-items: center;
+
+		.pomade__img {
+			flex: 0 0 50%;
+
+			img {
+				width: 100%;
+				object-fit: cover;
+				border-radius: 20px;
+			}
+		}
+
+		.pomade__text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			text-align: center;
+
+			.pomade__title {
+				font-size: 43px;
+				margin: 0 0 42px 0;
+			}
+
+			.pomade__desc {
+				font-size: 17px;
+				width: 380px;
+				margin: 0 0 50px 0;
+
+				p:first-child {
+					margin: 0 0 23px 0;
+				}
+			}
+
+			.pomade__btn {
+				display: inline-block;
+				padding: 2px 93px;
+				color: #000;
+				text-transform: uppercase;
+				font-weight: 700;
+				background: #FFA5FF;
+				border-radius: 999px;
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 20px 0;
+	background: #F4F5FE;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
